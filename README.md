@@ -1,4 +1,4 @@
-# Octopus Volleyball
+# Beach Volleyball Mini
 
 A 2D beach volleyball game made with Python and pygame. Play against the computer or with a friend on the same keyboard.
 
@@ -49,7 +49,7 @@ Open **Game Settings** from the menu. Your choices are saved to `settings.json`.
 ## Project structure
 
 ```
-our-multimedia-application/
+beach-volleyball-mini/
 ├── main.py               # Entry point: python main.py
 ├── game/                 # Game code (Python package)
 │   ├── home.py           # Home screen: Single Player / Multiplayer / Quit

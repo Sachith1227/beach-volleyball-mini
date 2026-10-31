@@ -4,7 +4,7 @@ import sys
 from .menu import run_menu_screen
 from .assets import load_image, load_font
 from .settings import load_settings
-from .ui import Button, Bubbles, draw_title, draw_text, draw_top_shade, ACCENT_COLOR
+from .ui import Button, Bubbles, draw_title, draw_badge, draw_top_shade, ACCENT_COLOR
 
 WIDTH, HEIGHT = 800, 600
 
@@ -43,13 +43,13 @@ def run_home():
 
     running = True
     while running:
-        pygame.display.set_caption("Volleyball Game - Home")
+        pygame.display.set_caption("Beach Volleyball Mini - Home")
         screen.blit(home_background, (0, 0))
         bubbles.update_and_draw(screen)
         draw_top_shade(screen, 260)
-        draw_title(screen, "Octopus", title_font, (WIDTH // 2, 95))
+        draw_title(screen, "Beach", title_font, (WIDTH // 2, 95))
         draw_title(screen, "Volleyball", title_font, (WIDTH // 2, 175), (255, 255, 255))
-        draw_text(screen, "Beach volleyball with eight arms", subtitle_font, ACCENT_COLOR, (WIDTH // 2, 240), outline=2, shadow=3)
+        draw_badge(screen, "MINI", subtitle_font, ACCENT_COLOR, (WIDTH // 2, 245))
 
         for button in buttons:
             button.draw(screen, button_font)

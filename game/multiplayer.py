@@ -16,7 +16,7 @@ def play_game(screen=None):
     # Screen setup (reuse the menu's window when called from the menu)
     if screen is None:
         screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Volleyball Game - Multiplayer")
+    pygame.display.set_caption("Beach Volleyball Mini - Multiplayer")
 
     # Load background image
     background = load_image(SETTINGS["court"], (WIDTH, HEIGHT), alpha=False)

@@ -19,12 +19,12 @@ def start_game_action(mode, screen):
         multi_game(screen)
     # Back from the game -> restore the menu
     stop_music()
-    pygame.display.set_caption("Volleyball Game - Menu")
+    pygame.display.set_caption("Beach Volleyball Mini - Menu")
     play_music("background.mp3", 0.5, SETTINGS["music"])
 
 def game_settings(screen):
     run_settings_screen(screen)
-    pygame.display.set_caption("Volleyball Game - Menu")
+    pygame.display.set_caption("Beach Volleyball Mini - Menu")
 
 def mute_sound():
     SETTINGS["music"] = not SETTINGS["music"]
@@ -49,7 +49,7 @@ def run_menu_screen(mode, screen):
     button_font = pygame.font.SysFont("comicsansms", 28, bold=True)
     title_font = load_font("1.ttf", 70)
 
-    pygame.display.set_caption("Volleyball Game - Menu")
+    pygame.display.set_caption("Beach Volleyball Mini - Menu")
 
     # Load menu background
     menu_background = load_image("menu.jpg", (WIDTH, HEIGHT), alpha=False)
